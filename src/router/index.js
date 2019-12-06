@@ -33,6 +33,14 @@ let router = new Router({
             }
         },
         {
+            name:"Post",
+            path:"/post",
+            component:() => import("@/views/post"),
+            meta: { 
+                requiresAuth: true
+            }
+        },
+        {
             name:"Signup",
             path:"/signup",
             component:()=>import ("@/views/signup"),

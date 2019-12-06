@@ -12,7 +12,9 @@ const serverPath = {
     routes: {
         login:"/user/login",
         signup:"/user/register",
-        blogs:"/post/list"
+        blogs:"/post/list",
+        create:"/post/create",
+        post:"/post"
     },
   };
   

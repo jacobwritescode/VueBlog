@@ -17,7 +17,7 @@
       <input type="password"  placeholder="Enter Password" v-model="userdata.password" name="psw" required />
 
       <button type="submit" v-on:click="signup">Sign Up</button>
-      <button type="button" v-on:click="reset">Cancel</button>
+       <span><router-link to="/login" >Already have an account?</router-link></span>
     </div>
   </form>
 </template>

@@ -9,7 +9,6 @@ export function clearCookies() {
     });
 }
 export function setCookies(data) {
-    console.log("user data at setcookie->",data)
     try {
 
         let cookie = {}

@@ -2,7 +2,7 @@
   <form>
     <div class="container">
       <label for="email">
-        <b>email</b>
+        <b>Email</b>
       </label>
       <input type="text" placeholder="Enter Username" v-model="userdata.email" name="email" required />
 
@@ -13,6 +13,7 @@
 
       <button type="submit" v-on:click="login" >Login</button>
     </div>
+     <p><router-link to="/signup" >Create an account</router-link></p>
     <div class="container">
       <button type="button" class="cancelbtn" v-on:click="reset" >Cancel</button>
     </div>

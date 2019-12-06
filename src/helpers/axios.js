@@ -4,7 +4,7 @@ import config from "../config";
 import {getJsonCookies } from "./utility";
 
 const customHeader = () => ({
-    // Authorization: getJsonCookies() || undefined,
+    Authorization: getJsonCookies() || undefined,
 });
 
 export function api() {
@@ -12,7 +12,6 @@ export function api() {
         baseURL: config.api.trim(),
         headers: customHeader(),
     };
-    console.log("api opts-->",opts)
     return axios.create(opts);
 }
 
